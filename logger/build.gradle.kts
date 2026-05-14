@@ -42,8 +42,6 @@ dependencies {
 }
 
 mavenPublishing{
-    publishToMavenCentral()
-    signAllPublications()
     coordinates(
         "io.github.arunscs20",
         "logger-runtime",
