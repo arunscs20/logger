@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "com.aetheralstudios.logger"
     compileSdk = 36
-    version = "1.0.1"
+    version = "1.0.2"
 
     defaultConfig {
         minSdk = 24
