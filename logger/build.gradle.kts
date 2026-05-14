@@ -73,3 +73,7 @@ mavenPublishing{
         }
     }
 }
+
+signing {
+    sign(publishing.publications)
+}
