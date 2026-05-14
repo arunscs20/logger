@@ -20,10 +20,6 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Create GPG Ring file
-        run: |
-          echo "${{ secrets.GPG_KEY_CONTENTS }}" | base64 --decode > ${{ github.workspace }}/secring.gpg
-
       - name: Publish to MavenCentral
         run: ./gradlew publishToMavenCentral --no-configuration-cache
         env:
