@@ -6,7 +6,7 @@ plugins {
 android {
     namespace = "io.github.arunscs20.logger"
     compileSdk = 37
-    version = "1.0.1"
+    version = "1.0.2"
 
     defaultConfig {
         minSdk = 24
@@ -73,18 +73,3 @@ mavenPublishing{
         }
     }
 }
-
-//signing {
-//    val keyId = System.getenv("ORG_GRADLE_PROJECT_signing.keyId")
-//    val password = System.getenv("ORG_GRADLE_PROJECT_signing.password")
-//    val keyFile = System.getenv("ORG_GRADLE_PROJECT_signing.secretKeyRingFile")
-//
-//    if (keyFile != null) {
-//        // This explicitly tells Gradle to use the file you created in the workflow
-//        project.extra.set("signing.keyId", keyId)
-//        project.extra.set("signing.password", password)
-//        project.extra.set("signing.secretKeyRingFile", keyFile)
-//    }
-//
-//    sign(publishing.publications)
-//}
