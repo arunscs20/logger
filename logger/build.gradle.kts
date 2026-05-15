@@ -44,7 +44,7 @@ dependencies {
 mavenPublishing{
     coordinates(
         "io.github.arunscs20",
-        "logger-runtime",
+        "logger",
         version.toString()
     )
     pom{
