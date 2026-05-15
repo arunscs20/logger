@@ -6,7 +6,7 @@ plugins {
 android {
     namespace = "io.github.arunscs20.logger"
     compileSdk = 37
-    version = "1.0.2"
+    version = "1.0.3"
 
     defaultConfig {
         minSdk = 24
@@ -41,32 +41,32 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-mavenPublishing{
+mavenPublishing {
     coordinates(
         "io.github.arunscs20",
         "logger",
         version.toString()
     )
-    pom{
+    pom {
         name.set("Logger")
         description.set("A lightweight Android Logcat logger plugin")
         inceptionYear.set("2026")
         url.set("https://github.com/arunscs20/logger")
-        licenses{
-            license{
+        licenses {
+            license {
                 name.set("The Apache License, Version 2.0")
                 url.set("https://www.apache.org/licenses/LICENSE-2.0.txt")
                 distribution.set("https://www.apache.org/licenses/LICENSE-2.0.txt")
             }
         }
-        developers{
-            developer{
+        developers {
+            developer {
                 id.set("arunscs20")
                 name.set("Arun S C S")
                 url.set("https://www.aetheralstudios.com/arun")
             }
         }
-        scm{
+        scm {
             url.set("https://github.com/arunscs20/logger")
             connection.set("scm:git:git://github.com/arunscs20/logger.git")
             developerConnection.set("scm:git:ssh://git@github.com/arunscs20/logger.git")
