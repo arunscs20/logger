@@ -1,4 +1,4 @@
-package com.aetheralstudios.logger
+package io.github.arunscs20.logger
 
 enum class LogLevel(val priority: Int) {
     VERBOSE(2),

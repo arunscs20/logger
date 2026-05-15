@@ -1,13 +1,15 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
 }
 
 android {
-    namespace = "com.aetheralstudios.logger"
+    namespace = "io.github.arunscs20.demo"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.aetheralstudios.logger"
+        applicationId = "io.github.arunscs20.demo"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -36,7 +38,9 @@ kotlin {
 }
 
 dependencies {
-
+    implementation(project(":logger"))
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

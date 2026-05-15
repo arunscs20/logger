@@ -1,4 +1,4 @@
-package com.aetheralstudios.logger
+package io.aetheralstudios.logger
 
 import org.junit.Test
 
